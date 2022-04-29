@@ -9,5 +9,5 @@ const reportWebVitals = onPerfEntry => {
     });
   }
 };
-
+//AUTOR DIEGO SANTOS SILVA DISPENSA CÓPIAS
 export default reportWebVitals;

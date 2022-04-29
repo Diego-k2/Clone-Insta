@@ -1,0 +1,92 @@
+.caixaPost {
+    margin: 20px auto;
+    border: 1px solid #EFEFEF;
+    width: 500px;
+    background: #FFFFFF;
+}
+
+.caixaPost h3 {
+    margin: 20px 5px;
+    border-radius: 3px;
+}
+
+.caixaPost h4 {
+    margin: 10px 5px;
+    border-radius: 3px;
+}
+
+.post_image {
+    width: 100%;
+}
+
+.botoesLike, .marcador {
+    background: #FFFFFF;
+    border: none;
+    padding: 0 7px;
+}
+
+.botoesLike:hover, .marcador:hover {
+    background: #FFFFFF;
+    opacity: 0.4;
+}
+
+.interacoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagemPerfil{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.flex-display {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.post_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.post_text{
+    margin-left: 5px;
+}
+
+.post_header div button img {
+    opacity: 0.6;
+}
+
+.data_post {
+    font-weight: 300;
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.caixa-comentario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #EFEFEF;
+    margin-top: 10px;
+}
+
+.comentario-texto{
+    border: none;
+    width: 80%;
+    height: 30px;
+    padding: 13px;
+    outline: 0;
+}
+
+.publicar {
+    color: #0F9BF7;
+    font-weight: 600;
+}
+
