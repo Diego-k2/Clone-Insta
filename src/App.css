@@ -9,14 +9,14 @@ body {
   color: #262626;
   font-size: 14px;
   line-height: 18px;
+  background: #fff;
 }
 .app {
-  background-color: #fafafa;
+  background-color: #ffff;
   min-height: 100vh;
 }
 
-.timeline {
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 20px;
+.app-flex {
+  display: flex;
+  flex-direction: column;
 }

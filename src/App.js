@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import Post from "./componentes/post/Post";
-import Header from "./componentes/header/Header";
 import "./App.css";
-import Story from "./componentes/story/Story";
-//import Modal from "@material-ui/core/Modal";
-//autor: DIEGO SANTOS 
-
+import Header from "./componentes/header/header"
+import Post from "./componentes/postagem/postagem";
+import Story from "./componentes/story/story"
+import sideBar from "./componentes/sideBar/sideBar"
 
 function App() {
+
   const [posts, setPosts] = useState([
     {
       userPhoto: "https://www.otaviomiranda.com.br/wp-content/uploads/2018/07/foto-perfil-2.png",
@@ -29,28 +28,33 @@ function App() {
       caption: "Sorte de todos os dias!",
       imageUrl:
         "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    },
+    }
   ]);
 
   return (
-
     <div className="app">
+      <div>
+          <Header />
+      </div>
+      
+      <div className="app-flex">
+        <Story />
+        {posts.map((post) => (
+          <Post
+            userphoto={post.userPhoto}
+            username={post.username}
+            caption={post.caption}
+            imageUrl={post.imageUrl}
+          />
+        ))}
+      </div>
 
-    <Header />
+      <div>
+        <sideBar/>
+      </div>
 
-    <div className="timeline">
-    <Story />
-      {posts.map((post) => (
-        <Post
-          userphoto={post.userPhoto}
-          username={post.username}
-          caption={post.caption}
-          imageUrl={post.imageUrl}
-        />
-      ))}
+
     </div>
-  </div>
-  
   );
 }
 
